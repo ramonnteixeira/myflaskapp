@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="/js/lib/angular.min.js"></script>
+	<script src="/js/state/test-controller.js"></script>
+</head>
+{% raw %}
+<body ng-app="TestApp">
+
+	<div ng-controller="TestCtrl">
+		<ul>
+			<li ng-repeat="step in steps track by step.id">
+				{{step.title}}
+			</li>
+		</ul>
+	</div>
+</body>
+{% endraw %}
+</html>
